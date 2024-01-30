@@ -10,6 +10,7 @@
         grid-template-columns: repeat(6, 1fr);
         align-items: center;
 
+        // -1 means "go all the way to the end" in css grid.
         @media only screen and (max-width: $bp-medium) {
             grid-column: 1 / -1;
             padding: 6rem;
@@ -18,8 +19,8 @@
 
     &__img--1 {
         width: 100%;
-        grid-row: 2 / 6;
-        grid-column: 2 / 6;
+        grid-row: 1/6;
+        grid-column: 1/4;
         box-shadow: 0 2rem 5rem rgba(#000, .1);
 
         @media only screen and (max-width: $bp-medium) {
@@ -29,9 +30,9 @@
     }
 
     &__img--2 {
-        width: 115%;
-        grid-row: 4 / 6;
-        grid-column: 4 / 7;
+        width: 100%;
+        grid-row: 6/7;
+        grid-column: 3/7;
         z-index: 20;
         box-shadow: 0 2rem 5rem rgba(#000, .2);
 
